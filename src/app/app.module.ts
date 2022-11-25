@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FriendsAddComponent } from './friends-add/friends-add.component';
 import { FriendsViewComponent } from './friends-view/friends-view.component';
+import { FriendsNavbarComponent } from './friends-navbar/friends-navbar.component';
 
 const myRoute: Routes=[
   {
@@ -22,7 +23,8 @@ const myRoute: Routes=[
   declarations: [
     AppComponent,
     FriendsAddComponent,
-    FriendsViewComponent
+    FriendsViewComponent,
+    FriendsNavbarComponent
   ],
   imports: [
     BrowserModule,
