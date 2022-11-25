@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { FriendsAddComponent } from './friends-add/friends-add.component';
 import { FriendsViewComponent } from './friends-view/friends-view.component';
 import { FriendsNavbarComponent } from './friends-navbar/friends-navbar.component';
+import { FriendsSearchComponent } from './friends-search/friends-search.component';
 
 const myRoute: Routes=[
   {
@@ -16,6 +17,10 @@ const myRoute: Routes=[
   {
     path: "view",
     component: FriendsViewComponent
+  },
+  {
+    path: "search",
+    component: FriendsSearchComponent
   }
 ]
 
@@ -24,7 +29,8 @@ const myRoute: Routes=[
     AppComponent,
     FriendsAddComponent,
     FriendsViewComponent,
-    FriendsNavbarComponent
+    FriendsNavbarComponent,
+    FriendsSearchComponent
   ],
   imports: [
     BrowserModule,
