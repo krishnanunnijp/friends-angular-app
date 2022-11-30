@@ -13,4 +13,8 @@ export class ApiService {
    {
     return this.http.get("https://dummyapifriends.herokuapp.com/view")
    }
+   addFriends=(readValue:any)=>
+   {
+    return this.http.post("https://dummyapifriends.herokuapp.com/adddata",readValue)
+   }
 }
